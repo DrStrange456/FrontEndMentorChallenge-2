@@ -1,0 +1,139 @@
+@import url("ttps://fonts.google.com/specimen/Raleway");
+
+
+:root {
+    --PaleBlue: hsl(243, 100%, 93%);
+    --GrayishBlue: hsl(229, 7%, 55%);
+    --DarkBlue: hsl(228, 56%, 26%);
+    --VeryDarkBlue: hsl(229, 57%, 11%);
+
+    --lg-font-wt: 700;
+    --sm-Font-wt: 400;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--VeryDarkBlue);
+    width: 1440px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+body .bg-img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 50vh;
+    bottom: 0;
+    left: 0;
+}
+.bg-desktop {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    width: 70%;
+    height: 20%;
+    /* border: 1px solid #fff; */
+    justify-items: center;
+    align-content: center;
+}
+.bg-desktop #console {
+    position: relative;
+    height: 200px;
+    width: 400px;
+    background-color:  var(--DarkBlue);
+    margin-right: 30px;
+    border-radius: 15px 95px 15px 15px;
+}
+.bg-desktop #console #logo {
+    position: relative;
+    height: 100px;
+    width: 120px;
+    left: 50px;
+    top: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../images/logo.svg");
+}
+.bg-desktop #console button {
+    height: 50px;
+    width: 50px;
+    margin-left: 15px;
+    margin-top: 15px;
+    background-color: var(--VeryDarkBlue);
+    border-style: none;
+}
+.bg-desktop #console #btnDocument {
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: center;
+    background-image: url("../images/icon-document.svg");
+    border-radius: 10px;
+    margin-left: 50px;
+}
+.bg-desktop #console #btnFolder {
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: center;
+    background-image: url("../images/icon-folder.svg");
+    border-radius: 10px;
+}
+.bg-desktop #console #btnUpload {
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: center;
+    background-image: url("../images/icon-upload.svg");
+    border-radius: 10px;
+}
+.bg-desktop #status {
+    position: relative;
+    height: 160px;
+    width: 500px;
+    right: 0;
+    background-color: var(--DarkBlue);
+    transform: translateY(25%);
+    border-radius: 15px;
+}
+.bg-desktop #status h1 {
+    font-size: 1rem;
+    height: 30px;
+    /* position: absolute; */
+    font-family: Raleway;
+    color: #fff;
+    z-index: 1;
+    /* margin: auto auto; */
+
+}
+
+
+.progress {
+    background-color: #d8d8d8;
+    border-radius: 20px;
+    height: 20px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+
+.progress-done {
+    background: linear-gradient(to left, #f2709c, #ff9472);
+    /* box-shadow: 0 3px 3px -5px #f2709c, 0 2px 5px #f2709c; */
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0%;
+    height: 100%;
+    width: 100px;
+    transition: 1s ease;
+
+}
